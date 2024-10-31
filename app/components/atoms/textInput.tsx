@@ -24,6 +24,7 @@ export const TextInput = ({ height = 54 }: { height?: number }) => {
 
 const styles = StyleSheet.create({
   input: {
+    flex: 1,
     height: 54,
     borderRadius: 6,
     backgroundColor: Colors.dark.base.gray500,
