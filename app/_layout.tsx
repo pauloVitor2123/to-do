@@ -9,7 +9,10 @@ import { useEffect } from "react";
 import "react-native-reanimated";
 
 import { useColorScheme } from "@/hooks/useColorScheme";
-import { Header } from "./components/header";
+import { Header } from "./components/atoms/header";
+import { StatusBar, View } from "react-native";
+import { TextInput } from "./components/atoms/textInput";
+import { SearchContainer } from "./components/molecules/search";
 
 // Prevent the splash screen from auto-hiding before asset loading is complete.
 SplashScreen.preventAutoHideAsync();
@@ -32,7 +35,9 @@ export default function RootLayout() {
 
   return (
     <ThemeProvider value={colorScheme === "dark" ? DarkTheme : DefaultTheme}>
+      <StatusBar barStyle={"light-content"} />
       <Header />
+      <SearchContainer />
     </ThemeProvider>
   );
 }

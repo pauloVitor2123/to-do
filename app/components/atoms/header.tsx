@@ -1,10 +1,9 @@
 import { Colors } from "@/constants/Colors";
-import { Image, StatusBar, StyleSheet, View } from "react-native";
+import { Image, StyleSheet, View } from "react-native";
 
 export const Header = () => {
   return (
     <View style={styles.container}>
-      <StatusBar barStyle={"light-content"} />
       <Image
         source={require("@/assets/images/logo.png")}
         style={styles.image}
