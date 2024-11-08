@@ -1,21 +1,20 @@
 import { Colors } from "@/constants/Colors";
-import { useState } from "react";
-import {
-  StyleSheet,
-  TextInput as TextInputComponent,
-  View,
-} from "react-native";
+import { StyleSheet, TextInput as TextInputComponent } from "react-native";
 
-export const TextInput = ({ height = 54 }: { height?: number }) => {
-  const [text, onChangeText] = useState("");
+type TextInputProps = {
+  height?: number;
+  value: string;
+  onChange: (text: string) => void;
+};
 
+export const TextInput = ({ height = 54, value, onChange }: TextInputProps) => {
   const dynamicStyle = StyleSheet.flatten([styles.input, { height }]);
 
   return (
     <TextInputComponent
       style={dynamicStyle}
-      onChangeText={onChangeText}
-      value={text}
+      onChangeText={onChange}
+      value={value}
       placeholder="Adicione uma nova tarefa"
       placeholderTextColor={Colors.dark.base.gray300}
     />
