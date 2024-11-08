@@ -8,11 +8,12 @@ import * as SplashScreen from "expo-splash-screen";
 import { useEffect } from "react";
 import "react-native-reanimated";
 
-import { Header } from "./components/atoms/header";
 import { StatusBar, View } from "react-native";
-import { SearchContainer } from "./components/molecules/search";
 import { useColorScheme } from "@/hooks/useColorScheme";
 import { Colors } from "@/constants/Colors";
+import { Header } from "./components/atoms/Header";
+import { SearchContainer } from "./components/molecules/Search";
+import { List } from "./components/organisms/List";
 
 // Prevent the splash screen from auto-hiding before asset loading is complete.
 SplashScreen.preventAutoHideAsync();
@@ -33,16 +34,17 @@ export default function RootLayout() {
     return null;
   }
 
-  const theme = colorScheme === "dark" ? "dark" : "light";
+  const theme = colorScheme as "dark" | "light";
 
   return (
     <ThemeProvider value={theme === "dark" ? DarkTheme : DefaultTheme}>
       <StatusBar
         barStyle={theme === "dark" ? "light-content" : "dark-content"}
       />
-      <View style={{ backgroundColor: "primary", flex: 1 }}>
+      <View style={{ backgroundColor: Colors.dark.base.gray600, flex: 1 }}>
         <Header />
         <SearchContainer />
+        <List />
       </View>
     </ThemeProvider>
   );

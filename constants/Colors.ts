@@ -22,6 +22,7 @@ export const Colors = {
     product: {
       blueDark: "#1E6F9F",
       blue: "#5E60CE",
+      secondaryBlue: "#4EA8DE",
       purple: "#8284FA",
     },
     base: {

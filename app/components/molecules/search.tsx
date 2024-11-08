@@ -1,6 +1,6 @@
 import { StyleSheet, View } from "react-native";
-import { TextInput } from "../atoms/textInput";
-import { IconButton } from "../atoms/iconButton";
+import { TextInput } from "../atoms/TextInput";
+import { IconButton } from "../atoms/IconButton";
 
 const DEFAULT_HEIGHT = 54;
 

@@ -35,5 +35,6 @@ const styles = StyleSheet.create({
     borderTopColor: Colors.dark.product.blue,
     borderRightColor: Colors.dark.product.blue,
     borderBottomColor: Colors.dark.product.blue,
+    fontSize: 16,
   },
 });
