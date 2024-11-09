@@ -1,4 +1,4 @@
-import { Colors } from "@/constants/Colors";
+import { Colors } from "@/app/constants/Colors";
 import { Text, View, StyleSheet } from "react-native";
 
 type StatusTextProps = {

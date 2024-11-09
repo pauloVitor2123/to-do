@@ -1,7 +1,7 @@
 import { ToDoItem } from "@/app/@types/ToDo";
 import { Text, View, StyleSheet, TouchableOpacity } from "react-native";
 import AntDesignIcons from "@expo/vector-icons/AntDesign";
-import { Colors } from "@/constants/Colors";
+import { Colors } from "@/app/constants/Colors";
 import { RadioButton } from "../atoms/RadioButton";
 import { useState } from "react";
 import { useToDoHook } from "@/app/hooks/useToDoHook";

@@ -1,4 +1,4 @@
-import { Colors } from "@/constants/Colors";
+import { Colors } from "@/app/constants/Colors";
 import { StyleSheet, TouchableOpacity, View } from "react-native";
 import AntDesignIcons from "@expo/vector-icons/AntDesign";
 

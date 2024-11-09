@@ -1,9 +1,9 @@
 import { FlatList, StyleSheet, View } from "react-native";
 import { StatusRow } from "../molecules/StatusRow";
-import { useToDoHook } from "@/app/hooks/useToDoHook";
 import { Empty } from "../atoms/Empty";
-import { Colors } from "@/constants/Colors";
+import { Colors } from "@/app/constants/Colors";
 import { TaskCard } from "../molecules/TaskCard";
+import { useToDoHook } from "@/app/hooks/useToDoHook";
 
 export const List = () => {
   const { toDoItems } = useToDoHook();

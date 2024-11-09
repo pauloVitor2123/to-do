@@ -1,6 +1,6 @@
 import { StyleSheet, TouchableOpacity, View } from "react-native";
 import AntDesignIcons from "@expo/vector-icons/AntDesign";
-import { Colors } from "@/constants/Colors";
+import { Colors } from "@/app/constants/Colors";
 import { ComponentProps } from "react";
 
 type AntDesignIconName = ComponentProps<typeof AntDesignIcons>["name"];

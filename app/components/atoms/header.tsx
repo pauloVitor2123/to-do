@@ -1,4 +1,4 @@
-import { Colors } from "@/constants/Colors";
+import { Colors } from "@/app/constants/Colors";
 import { Image, StyleSheet, View } from "react-native";
 
 export const Header = () => {

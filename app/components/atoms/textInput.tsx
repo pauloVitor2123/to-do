@@ -1,4 +1,4 @@
-import { Colors } from "@/constants/Colors";
+import { Colors } from "@/app/constants/Colors";
 import { useState } from "react";
 import { StyleSheet, TextInput as TextInputComponent } from "react-native";
 
