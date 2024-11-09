@@ -33,6 +33,15 @@ This command will move the starter code to the **app-example** directory and cre
 <img src="https://github.com/user-attachments/assets/ddccf733-1d36-425e-a3ba-25118acf5ae7" alt="Imagem de exemplo" width="400" />
 
 
+### Descrição dos Diretórios
+
+- **@types/**: Contém definições de tipos TypeScript, garantindo a tipagem consistente em todo o projeto.
+- **components/**: Inclui componentes de interface reutilizáveis, como botões e campos de entrada.
+- **constants/**: Armazena constantes globais, como cores e strings de uso frequente.
+- **contexts/**: Diretório de contextos React para gerenciamento de estados compartilhados.
+- **hooks/**: Hooks personalizados que encapsulam lógica reutilizável.
+- **models/**: Modelos de dados e interfaces TypeScript para representar as estruturas de dados.
+- **pages/**: Páginas da aplicação, representando as telas principais do app.
 
 
 ## Learn more
