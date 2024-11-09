@@ -36,11 +36,11 @@ const styles = StyleSheet.create({
   badgeText: {
     color: Colors.dark.base.gray200,
     fontSize: 12,
-    fontWeight: "700",
+    fontWeight: 700,
   },
   text: {
     color: Colors.dark.product.secondaryBlue,
-    fontWeight: "700",
+    fontWeight: 700,
     fontSize: 14,
   },
 });

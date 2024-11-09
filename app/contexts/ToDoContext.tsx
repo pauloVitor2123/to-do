@@ -67,10 +67,14 @@ export const ToDoProvider = ({ children }: ToDoProviderProps) => {
   }, []);
 
   const update = useCallback((item: ToDoItem) => {
-    const toDoItemsFiltered = [
-      ...toDoItems.filter((todoItem) => todoItem.createdAt !== item.createdAt),
-    ];
-    setToDoItems(toDoItemsFiltered);
+    setToDoItems((previus) =>
+      previus.map((itemFiltered) => {
+        if (itemFiltered.createdAt.toString() === item.createdAt.toString()) {
+          return item;
+        }
+        return itemFiltered;
+      })
+    );
   }, []);
 
   return (

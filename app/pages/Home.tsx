@@ -21,10 +21,6 @@ export const Home = () => {
         <Header />
         <SearchContainer />
         <List />
-
-        {toDoItems.map((item) => (
-          <Text key={item.createdAt.toString()}>{item.text}</Text>
-        ))}
       </View>
     </>
   );
