@@ -1,4 +1,4 @@
-# Welcome to your Expo app 👋
+# ToDo -> Expo Project👋
 
 This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
 
@@ -25,15 +25,15 @@ In the output, you'll find options to open the app in a
 
 You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
 
-## Get a fresh project
-
-When you're ready, run:
-
-```bash
-npm run reset-project
-```
-
 This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+
+## Screens
+<img src="https://github.com/user-attachments/assets/877286e2-8fe2-4abd-a8c0-724d04c7c5f9" alt="Imagem de exemplo" width="400" />
+
+<img src="https://github.com/user-attachments/assets/ddccf733-1d36-425e-a3ba-25118acf5ae7" alt="Imagem de exemplo" width="400" />
+
+
+
 
 ## Learn more
 
