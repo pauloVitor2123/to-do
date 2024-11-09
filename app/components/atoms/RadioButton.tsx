@@ -8,7 +8,6 @@ type RadioButtonProps = {
 };
 
 export const RadioButton = ({ checked, onPress }: RadioButtonProps) => {
-  console.log(checked);
   if (checked) {
     return (
       <TouchableOpacity onPress={onPress} activeOpacity={0}>

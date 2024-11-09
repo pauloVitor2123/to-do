@@ -1,4 +1,4 @@
-import { StyleSheet, Text, View } from "react-native";
+import { FlatList, StyleSheet, View } from "react-native";
 import { StatusRow } from "../molecules/StatusRow";
 import { useToDoHook } from "@/app/hooks/useToDoHook";
 import { Empty } from "../atoms/Empty";
@@ -14,11 +14,10 @@ export const List = () => {
         doneLenght={toDoItems.filter((item) => item.done).length}
       />
       {toDoItems.length > 0 ? (
-        <View>
-          {toDoItems.map((item) => (
-            <TaskCard item={item} />
-          ))}
-        </View>
+        <FlatList
+          data={toDoItems}
+          renderItem={({ item }) => <TaskCard item={item} />}
+        />
       ) : (
         <Empty />
       )}
@@ -31,6 +30,7 @@ const styles = StyleSheet.create({
     marginTop: 33,
     marginHorizontal: 24,
     gap: 20,
+    flex: 1,
   },
   taskCard: {
     width: "auto",

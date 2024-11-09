@@ -9,7 +9,7 @@ export const Empty = () => {
         style={styles.image}
       />
       <Text style={{ ...styles.text, ...styles.boldText }}>
-        Você ainda não tem tarefas cadastradas
+        Você ainda não tem tarefas cadastradas,
       </Text>
       <Text style={styles.text}>
         Crie tarefas e organize seus itens a fazer
@@ -20,7 +20,6 @@ export const Empty = () => {
 
 const styles = StyleSheet.create({
   container: {
-    borderTopColor: Colors.dark.base.gray400,
     borderTopWidth: 1,
     paddingTop: 20,
     marginTop: 20,
@@ -35,7 +34,7 @@ const styles = StyleSheet.create({
   text: {
     fontWeight: 400,
     fontSize: 14,
-    color: Colors.dark.base.gray400,
+    color: Colors.dark.base.gray300,
   },
   emptyBox: {
     paddingHorizontal: 20,

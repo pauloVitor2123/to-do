@@ -1,10 +1,9 @@
 import { ToDoItem } from "@/app/@types/ToDo";
-import { Text, View, StyleSheet } from "react-native";
+import { Text, View, StyleSheet, TouchableOpacity } from "react-native";
 import AntDesignIcons from "@expo/vector-icons/AntDesign";
 import { Colors } from "@/constants/Colors";
 import { RadioButton } from "../atoms/RadioButton";
 import { useState } from "react";
-import { TouchableOpacity } from "react-native-gesture-handler";
 import { useToDoHook } from "@/app/hooks/useToDoHook";
 
 export const TaskCard = ({ item }: { item: ToDoItem }) => {
@@ -40,6 +39,7 @@ const styles = StyleSheet.create({
     width: "auto",
     padding: 12,
     display: "flex",
+    alignItems: "center",
     justifyContent: "space-between",
     backgroundColor: Colors.dark.base.gray500,
     borderColor: Colors.dark.base.gray400,
@@ -47,14 +47,16 @@ const styles = StyleSheet.create({
     gap: 8,
     marginBottom: 8,
     flexDirection: "row",
+    textAlign: "left",
   },
   taskText: {
     fontSize: 14,
     color: Colors.dark.base.gray100,
     fontWeight: 400,
-    width: "100%",
+    flex: 1,
   },
   textLineTrough: {
     textDecorationLine: "line-through",
+    color: Colors.dark.base.gray300,
   },
 });

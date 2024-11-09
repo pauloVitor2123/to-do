@@ -1,4 +1,5 @@
 import { Colors } from "@/constants/Colors";
+import { useState } from "react";
 import { StyleSheet, TextInput as TextInputComponent } from "react-native";
 
 type TextInputProps = {
@@ -8,10 +9,18 @@ type TextInputProps = {
 };
 
 export const TextInput = ({ height = 54, value, onChange }: TextInputProps) => {
-  const dynamicStyle = StyleSheet.flatten([styles.input, { height }]);
+  const [isFocused, setIsFocused] = useState(false);
+  const dynamicStyle = StyleSheet.flatten([
+    styles.input,
+    { height },
+    isFocused ? styles.inputFocusable : {},
+  ]);
 
   return (
     <TextInputComponent
+      focusable={isFocused}
+      onFocus={() => setIsFocused(true)}
+      onBlur={() => setIsFocused(false)}
       style={dynamicStyle}
       onChangeText={onChange}
       value={value}
@@ -35,5 +44,8 @@ const styles = StyleSheet.create({
     borderRightColor: Colors.dark.product.blue,
     borderBottomColor: Colors.dark.product.blue,
     fontSize: 16,
+  },
+  inputFocusable: {
+    borderWidth: 1,
   },
 });

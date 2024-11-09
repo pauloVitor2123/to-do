@@ -1,9 +1,4 @@
-import {
-  GestureResponderEvent,
-  StyleSheet,
-  TouchableOpacity,
-  View,
-} from "react-native";
+import { StyleSheet, TouchableOpacity, View } from "react-native";
 import AntDesignIcons from "@expo/vector-icons/AntDesign";
 import { Colors } from "@/constants/Colors";
 import { ComponentProps } from "react";
@@ -13,7 +8,7 @@ type IconButtonProps = {
   name: AntDesignIconName;
   size?: number;
   height?: number;
-  onPress?: ((event: GestureResponderEvent) => void) | undefined;
+  onPress?: () => void;
 };
 
 export const IconButton = (props: IconButtonProps) => {
